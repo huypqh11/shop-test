@@ -1,8 +1,8 @@
 import React from "react";
 import { Col } from "antd";
-import { WrapperHeader, WrapperTextHeader } from "./style";
+import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader } from "./style";
 import Search from "antd/es/input/Search";
-
+import { UserOutlined, CaretDownOutlined } from '@ant-design/icons';
 const HeaderComponent = () => {
     return (
         <div>
@@ -22,8 +22,19 @@ const HeaderComponent = () => {
             //onSearch={onSearch} 
             enterButton
             />
-                </Col>
-                <Col span={6}>col-8</Col>
+            </Col>
+            <Col span={6}>
+                <WrapperHeaderAccount>
+                    <UserOutlined style={{fontSize:30}}/>
+                    <div>
+                        <span>Đăng nhập/Đăng ký</span>
+                        <div>
+                            <span>Tài Khoản</span>
+                            <CaretDownOutlined />
+                        </div>
+                    </div>
+                </WrapperHeaderAccount>
+            </Col>
             </WrapperHeader>
         </div>
     );

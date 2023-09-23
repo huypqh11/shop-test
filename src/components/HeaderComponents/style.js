@@ -11,3 +11,9 @@ export const WrapperTextHeader = styled.span`
     font-weight: bold;
     text-align: left;
 `
+export const WrapperHeaderAccount = styled.div`
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+`
