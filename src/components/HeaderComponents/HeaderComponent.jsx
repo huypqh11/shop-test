@@ -1,8 +1,8 @@
 import React from "react";
 import { Col } from "antd";
-import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader } from "./style";
+import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader,WrapperHeaderAccountText } from "./style";
 import Search from "antd/es/input/Search";
-import { UserOutlined, CaretDownOutlined } from '@ant-design/icons';
+import { UserOutlined, CaretDownOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 const HeaderComponent = () => {
     return (
         <div>
@@ -25,15 +25,19 @@ const HeaderComponent = () => {
             </Col>
             <Col span={6}>
                 <WrapperHeaderAccount>
-                    <UserOutlined style={{fontSize:30}}/>
+                    <UserOutlined style={{fontSize:'30px'}}/>
                     <div>
-                        <span>Đăng nhập/Đăng ký</span>
+                        <WrapperHeaderAccountText>Đăng nhập/Đăng ký</WrapperHeaderAccountText>
                         <div>
-                            <span>Tài Khoản</span>
+                            <WrapperHeaderAccountText>Tài Khoản</WrapperHeaderAccountText>
                             <CaretDownOutlined />
                         </div>
                     </div>
                 </WrapperHeaderAccount>
+                <div>
+                    <ShoppingCartOutlined style={{fontSize:'30px',color:'#fff'}}/>
+                    <WrapperHeaderAccountText> Giỏ Hàng</WrapperHeaderAccountText>
+                </div>
             </Col>
             </WrapperHeader>
         </div>

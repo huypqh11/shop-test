@@ -16,4 +16,12 @@ export const WrapperHeaderAccount = styled.div`
     align-items: center;
     color: white;
     gap: 10px;
+    font-size: 12px;
+`
+export const WrapperHeaderAccountText = styled.span`
+    color: white;
+    font-size: 12px;
+`
+export const WrapperHeaderAccountIcon = styled.span`
+    
 `
