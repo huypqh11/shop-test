@@ -8,7 +8,7 @@ const HeaderComponent = () => {
         <div>
             <WrapperHeader gutter={16}>
                 <Col span={6}>
-                    <WrapperTextHeader>Qhuy dep trai</WrapperTextHeader>
+                    <WrapperTextHeader>fvh </WrapperTextHeader>
                 </Col>
                 <Col span={12}>
                     <ButtonInputSearch 
